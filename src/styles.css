@@ -2,4 +2,167 @@ body {
     background-color: white;
     font-family:'Roboto';
     margin: 0;
+    display: flex;
 }
+
+#lists {
+    width: 360px;
+    min-height: 100vh;
+    background-color: rgb(35, 121, 81);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+#listButtonDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#listButtonDiv > button {
+    height: 60px;
+    width: 290px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: rgb(35, 121, 81);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#listButtonDiv > button.active {
+    background-color: black;
+}
+
+#listButtonDiv > #deleteList {
+    width: 60px;
+}
+
+#addListButton {
+    height: 60px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#right {
+    width: calc(100vw - 400px);
+    min-height: 100vh;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+}
+
+#listDetails {
+    height: min-content;
+    background-color: white;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.062);
+    padding: 30px
+}
+
+#listDetails > h1 {
+    font-size: 40px;
+}
+
+#listDetails > button {
+    height: 60px;
+    width: 140px;
+    background-color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#tasks {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+}
+
+#taskDiv {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    height: min-content;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.062);
+}
+
+#taskTitleDiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin: 0;
+}
+
+#taskTitleDiv > input {
+    appearance: none;
+    -webkit-appearance: none; /* Safari */
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#taskTitleDiv > input:checked {
+    background-color: black;
+}
+
+#taskTitleDiv > input:checked::after {
+    content: "✖";
+    color: white;
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: -2px;
+}
+
+#taskTitleDiv > h1 {
+    font-size: 20px;
+}
+
+#taskDateDiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#taskDateDiv > h1 {
+    font-size: 20px;
+}
+
+#buttonDiv {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 10px;
+}
+
+#buttonDiv > button {
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+

@@ -8,7 +8,36 @@
         <title>Todo list</title>
     </head>
     <body>
-        <div id="tasks">
+        <div id="lists"></div>
+        <div id="right">
+            <div id="listDetails"></div>
+            <div id="tasks"></div>
         </div>
+        <dialog id="dialog">
+            <div id="titleDiv">
+                <h1>Title:</h1>
+                <input type="text" id="titleInput">
+            </div>
+            <div id="descriptionDiv">
+                <h1>Description:</h1>
+                <input type="text" id="descriptionInput">
+            </div>
+            <div id="dateDiv">
+                <h1>Due date (year, month, day):</h1>
+                <input type="number" id="yearInput">
+                <input type="number" id="monthInput">
+                <input type="number" id="dayInput">
+            </div>
+            <div id="priorityDiv">
+                <h1>Priority:</h1>
+                <select id="priorityInput">
+                    <option value="low">low</option>
+                    <option value="medium">medium</option>
+                    <option value="high">high</option>
+                </select>
+            </div>
+            <button id="saveButton">SAVE</button>
+        </dialog>
+        <dialog id="listDialog"></dialog>
     </body>
 </html>
