@@ -1,4 +1,4 @@
-class Task {
+export class Task {
 
     constructor(title, description, year, month, day, priority, list){
         this.title = title;
@@ -156,6 +156,7 @@ export default class List {
 
         dialog.close();
         this.show();
+        this.manager.save();
     }
 
     deleteTask(id){
@@ -163,6 +164,7 @@ export default class List {
             if(this.tasks[i].id == id){
                 this.tasks.splice(i, 1);
                 this.show();
+                this.manager.save();
             }
         }
     }
