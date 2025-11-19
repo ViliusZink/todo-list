@@ -168,3 +168,146 @@ button:hover {
     filter: brightness(0.9);
 }
 
+#dialog[open] {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.062);
+    padding:20px;
+}
+
+#titleDiv {
+    display: flex;
+    gap: 10px;
+}
+
+#titleDiv > h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+#titleDiv > input {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    width: 100%;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#descriptionDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#descriptionDiv > h1 {
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+#descriptionDiv > textarea {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    width: 95%;
+    height: 150px;
+    padding: 10px;
+}
+
+#dateDiv {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#dateDiv > h1 {
+    font-size: 25px;
+}
+
+#dateDiv > input {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#yearInput {
+    width: 50px;
+}
+
+#monthInput {
+    width: 30px;
+}
+
+#dayInput {
+    width: 30px;
+}
+
+#priorityDiv {
+    display: flex;
+    gap: 10px;
+}
+
+#priorityDiv > h1 {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+#priorityDiv > select {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#dialog[open] > button {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+#listDialog[open] {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.062);
+    padding:20px;
+    gap:10px;
+}
+
+#listDialog[open] > h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+#listDialog[open] > input {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    height: 30px;
+    width: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#listDialog[open] > button {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
